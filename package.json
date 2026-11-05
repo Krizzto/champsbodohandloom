@@ -1,0 +1,22 @@
+{
+  "name": "bodo-handloom-museum",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build && rm -rf dist && cp -r frontend/dist dist",
+    "start": "node server.ts",
+    "preview": "npm --prefix frontend run preview",
+    "clean": "rm -rf dist frontend/dist",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "dependencies": {
+    "@types/pdf-parse": "^1.1.5",
+    "mammoth": "^1.13.0",
+    "pdf-parse": "^2.4.5"
+  }
+}

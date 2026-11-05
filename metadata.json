@@ -1,0 +1,6 @@
+{
+  "name": "Bodo VR Museum",
+  "description": "Digital cultural heritage platform and immersive 3D/VR archive dedicated to Bodo handloom, traditional Agor motifs, natural dyeing techniques, and master weavers of Northeast India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

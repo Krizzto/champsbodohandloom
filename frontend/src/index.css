@@ -1,0 +1,72 @@
+@import "./styles/fonts.css";
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+@layer base {
+  :root {
+    --bg-warm: #FAF8F5;
+    --paper-card: #F4EFE6;
+    --ink-black: #171513;
+    --bodo-yellow: #FFE600;
+    --bodo-accent-red: #8B2635;
+    --bodo-terracotta: #A64B2A;
+  }
+
+  body {
+    background-color: var(--bg-warm);
+    color: var(--ink-black);
+    overflow-x: hidden;
+  }
+}
+
+/* Yellow marker highlight effect matching reference */
+.yellow-highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 0.1em 0.35em;
+  white-space: nowrap;
+}
+
+.yellow-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 10% -4px 10% -4px;
+  background-color: #FFE600;
+  z-index: -1;
+  transform: rotate(-0.8deg);
+  border-radius: 2px;
+}
+
+.yellow-highlight-hero {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  padding: 0.1em 0.5em;
+  background-color: #FFE600;
+  border-radius: 2px;
+  transform: rotate(-0.5deg);
+  box-shadow: 0 2px 8px rgba(255, 230, 0, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EFE9;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4CDBC;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8AF99;
+}

@@ -204,7 +204,7 @@ ${graphText}
 Please provide an evidence-grounded answer adhering strictly to the ${expertise.toUpperCase()} expertise profile and writing rules above.`;
 
     const response = await this.aiClient.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.8-flash',
       contents: prompt,
       config: {
         systemInstruction,
